@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1. get elementById
+    2. getElementsByClassName
+    3. getElemntsByTayName
+    4. querySelector
+    5. querySelectorAll
+    6. HTML collection
+    7. document.write -->
+    <h1 id="heading" class="heading">Heading 1</h1>
+    <h1 id="heading-2" class="heading">Heading 2</h1>
+    <script>
+        var headings = document.getElementsByClassName('heading');
+        console.log(headings);
+        // console.log(headings[1]);
+        for (var i = 0; i <headings.length; i++){
+            console.log(headings[i]);
+        }
+    </script>
+</body>
+</html>

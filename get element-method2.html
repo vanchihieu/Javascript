@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading">HTML DOM</h1>
+
+    <div class="box-1">
+        <ul>
+            <li>Javascript 1</li>
+            <li>PHP 1</li>
+        </ul>
+
+        <p>Test paragraph</p>
+    </div>
+    <div class="box-2">
+        <ul>
+            <li>Javascript 2</li>
+            <li>PHP 2</li>
+        </ul>
+    </div>
+
+    <script>
+        // var listItemNodes = document.querySelectorAll('.box-1 li');
+        // console.log(listItemNodes);
+        
+        var boxNode = document.querySelector('.box-1');
+        // Cong viec 1: Su dung toi 'boxNode'
+        console.log(boxNode);
+        // Cong viec 2: Su dung toi cac li elements la con cua '.box-1'
+        console.log(boxNode.querySelectorAll('li'));
+        // console.log(boxNode.querySelectorAll('.box-1 li')); cach 2
+        console.log(boxNode.querySelectorAll('p'));
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .red {
+            color: red;
+        }
+        .green{
+            color: green;
+        }
+    </style>
+    <div class="box box-2">
+        <h1>CLass List</h1>
+    </div>
+    <script>
+        // ClassList property
+
+        //  add : them class vao element
+        // contains : kiem tra 1 class co nam trong element hay ko
+        // remove : xoa bo class ra khoi element
+        // toggle : neu co 1 class dang o element thi xoa bo, con neu ko co thi them class vao
+
+        var boxElement = document.querySelector('.box');
+        
+        // add
+        boxElement.classList.add('red', 'blue');
+
+        // contains
+        console.log(boxElement.classList.contains('red'));
+        
+        // remove
+        setTimeout(()=> {
+            boxElement.classList.remove('red');
+        },2000); // time sau 2s thi xuat hien
+        
+        // toggle
+        setTimeout(()=> {
+            boxElement.classList.toggle('green');
+        },2000); // time sau 2s thi xuat hien
+
+        setInterval(()=> {
+            boxElement.classList.toggle('green');
+        },1000); // time sau 1s thi xuat hien
+    </script>
+</body>
+
+</html>

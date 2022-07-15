@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading-test">Heading</h1>
+    <script>
+        var headingElement = document.querySelector('h1');
+        headingElement.title = 'Title'; // Them attribute vao element
+        headingElement.setAttribute('href','heading'); // Cach 2: them attribute vao element,co them bat ki attribute khong ton tai trong element 
+
+        console.log(headingElement.getAttribute('title'));// Lay attribute
+        console.log(headingElement.getAttribute('class'));
+        console.log(headingElement.getAttribute('href'));
+    </script>
+</body>
+</html>

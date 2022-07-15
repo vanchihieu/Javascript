@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading">
+        <span>Heading</span>
+        <span>text</span>
+    </h1>
+    <script>
+        var headingElement = document.querySelector('.heading');
+        console.log(headingElement.innerText); // Cach 1
+        console.log(headingElement.textContent); // 
+        // console.log(document.querySelector('.heading').innerText);Cach 2
+
+        headingElement.innerText = 'New heading';
+        document.querySelector('.heading').innerText = 'New heading';
+        
+
+        //textContent: tra ve nhung phan tu gia tri dang bi an di + dang thay
+        // innerText: hien thi nhung phan tu gia tri dang thay
+    </script>
+</body>
+</html>

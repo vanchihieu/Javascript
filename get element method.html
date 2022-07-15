@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading">HTML DOM</h1>
+    <h1 class="heading">HTML DOM</h1>
+    <h1 class="heading">HTML DOM</h1>
+    
+    <input type="text" value="thẻ không cần lấy" class="website"/>
+    <div>
+      	<input type="text" value="Thẻ Cần Lấy" class="website"/>
+        <input type="text" value="thẻ không cần lấy"/>
+    </div>
+
+    <script>
+        // <!-- HTML DOM
+        // 1. Element: ID,class, tag, CSS selector
+        // 2. Attribute
+        // 3. Text -->    
+            
+        // var headingNode = document.getElementById('heading');
+        var headingNodes = document.getElementsByClassName('heading');
+        // var headingNodes = document.getElementsByTagName('h1');
+        console.log(headingNodes);
+
+        var element = document.querySelectorAll("div input.website");
+        // Lấy giá trị của thẻ input
+        document.write('<h3>Nội dung thẻ cần lấy là: ' + element[0].value + '</h3>');
+    </script>
+</body>
+
+</html>
